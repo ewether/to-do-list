@@ -8,8 +8,7 @@ const listItem = document.querySelector('.item-list li');
 const submitBtn = document.querySelector('.submit-btn');
 
 
-// function to create new list item from user input
-// when user submits, their input creates a new li
+// user input is added to new li
 submitBtn.addEventListener('click', function() {
 // create brand new li node
   const li = document.createElement('li');
@@ -20,14 +19,27 @@ submitBtn.addEventListener('click', function() {
   itemList.appendChild(li);
 // clear input box after new list item is added
   userInput.value='';
-// add delete button to each li
-// will be added automatically with each new li entered, so should go inside event listener above
+
+  // delete button
+  const delBtn = document.createElement('button');
+  li.appendChild(delBtn);
+  delBtn.innerHTML = 'Delete';
+
+  // when delBtn is clicked, li will be deleted
+    delBtn.addEventListener('click', function() {
+      // when clicked, add class 'delete'?
+      li.classList.add('delete-Btn');
+    });
+
+  // edit button
+  const editBtn = document.createElement('button');
+  li.appendChild(editBtn);
+  editBtn.innerHTML = 'Edit';
+
+  // when editBtn is clicked, user can change innerHTML of that li
+
+
+
+
 });
 
-
-const button = document.createElement("button");
-
-button.addEventListener('click', function(){
-    button.parentElement.remove()
-    return;
-};

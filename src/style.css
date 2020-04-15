@@ -5,3 +5,16 @@ html {
 body {
   height: 700px;
 }
+
+.item-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.submit-btn {
+
+}
+
+.delete-Btn {
+  display: none;
+}
