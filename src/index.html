@@ -2,23 +2,22 @@
 <html>
 <head>
   <link href="./style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <title>To Do List</title>
 </head>
 <body>
 
   <h1 class="title">To Do List</h1>
 
-  <p class="instructions">
-    Welcome to your to do list! <br>
-    Just type out a to do list item and press enter to add it to your list. <br>
-    You will then be able to click on your list item to mark it as completed,
-    click edit to edit your item, or the "X" to delete it.
-  </p>
+    <p class="welcome">Welcome to your to do list!</p>
+    <p class="instructions">Enter text to add an item to your list. <br>
+    Click edit to edit an item. <br>
+    Click delete to delete an item.</p>
 
   <form action="#">
-    <label>Add new list item:</label>
-    <input type="text" class="user-input">
-    <input type="submit" value="Submit" class="submit-btn">
+    <input type="text" class="user-input" id="userInput">
+    <button type="submit" value="Submit" class="submit-btn"><i class="fas fa-check-square"></i></button>
   </form>
 
   <ul class="item-list">
