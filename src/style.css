@@ -1,9 +1,52 @@
 html {
-  height: 1500px;
+  text-align: center;
+  margin: 8em;
+  background-color: #383a3b;
+  color: #f5f5f5;
+  font-family: 'Roboto Mono', monospace;
 }
 
-body {
-  height: 700px;
+button {
+  cursor: pointer;
+  border:0;
+  background: none;
+}
+
+label {
+  cursor: auto;
+}
+
+li {
+  background-color: white;
+  color: #383a3b;
+}
+
+form {
+  line-height: 3em;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.welcome {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: .5em;
+}
+
+.instructions {
+  margin-top: 2em;
+  font-size: .9em;
+}
+
+.user-input {
+  width: 36em;
+  padding: 0;
+  height: 2em;
+  border-radius: 4px;
 }
 
 .item-list {
@@ -12,9 +55,19 @@ body {
 }
 
 .submit-btn {
-
+  cursor: pointer;
+  font-size: 1.75em;
+  padding: 0;
+  vertical-align: middle;
 }
 
-.delete-Btn {
+.delete-btn {
   display: none;
+}
+
+.edit-btn {
+  cursor: auto;
+}
+
+#userInput {
 }
