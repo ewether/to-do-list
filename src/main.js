@@ -31,15 +31,41 @@ submitBtn.addEventListener('click', function() {
       li.classList.add('delete-Btn');
     });
 
+
   // edit button
   const editBtn = document.createElement('button');
   li.appendChild(editBtn);
   editBtn.innerHTML = 'Edit';
 
-  // when editBtn is clicked, user can change innerHTML of that li
-
-
-
+    // when editBtn is clicked, user can edit li text
+    editBtn.addEventListener('click', function() {
+      // makes content on li editable
+      li.contentEditable = 'true';
+      li.setAttribute('contenteditable', 'true');
+      // makes edit and delete buttons uneditable
+      editBtn.contentEditable = 'false';
+      delBtn.contentEditable = 'false';
+    });
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
