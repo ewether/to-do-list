@@ -20,6 +20,7 @@ li {
   background-color: white;
   color: #383a3b;
   height: 2em;
+  line-height: 2em;
 }
 
 .title {
@@ -41,9 +42,18 @@ li {
 
 .user-input {
   width: 36em;
+  margin-top: 2em;
   padding: 0;
   height: 2em;
   border-radius: 4px;
+}
+
+.user-li {
+  font-size: 1em;
+  width: 27.1em;
+  margin: 0 auto;
+  margin-top: 2em;
+  display: flex;
 }
 
 .item-list {
@@ -62,13 +72,41 @@ li {
   display: none;
 }
 
-.delete-btn {
-  color: red;
-}
-
-.edit-btn {
+.del-edit {
   cursor: auto;
+  color: #f5f5f5;
+  background-color: #383a3b;
+  height: 2.6em;
 }
 
-#userInput {
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

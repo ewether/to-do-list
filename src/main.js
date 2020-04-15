@@ -13,6 +13,7 @@ submitBtn.addEventListener('click', function() {
 
   // variable for creating brand new li node
   const li = document.createElement('li');
+  li.classList.add('user-li');
 
   // finds length of userInput
   function liLength() {
@@ -38,7 +39,8 @@ submitBtn.addEventListener('click', function() {
   const delBtn = document.createElement('button');
   li.appendChild(delBtn);
   delBtn.innerHTML = 'Delete';
-  delBtn.classList.add('delete-btn');
+  delBtn.classList.add('del-edit');
+  delBtn.setAttribute('id', 'delete-btn');
 
   // when delBtn is clicked, li will be deleted
     delBtn.addEventListener('click', function() {
@@ -51,6 +53,8 @@ submitBtn.addEventListener('click', function() {
   const editBtn = document.createElement('button');
   li.appendChild(editBtn);
   editBtn.innerHTML = 'Edit';
+  editBtn.classList.add('del-edit');
+  editBtn.setAttribute('id', 'edit-btn')
 
     // when editBtn is clicked, user can edit li text
     editBtn.addEventListener('click', function() {
@@ -60,7 +64,6 @@ submitBtn.addEventListener('click', function() {
       // makes edit and delete buttons uneditable
       editBtn.contentEditable = 'false';
       delBtn.contentEditable = 'false';
-      li.classList.add('edit-btn');
     });
 
 
