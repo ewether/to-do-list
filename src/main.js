@@ -38,11 +38,12 @@ submitBtn.addEventListener('click', function() {
   const delBtn = document.createElement('button');
   li.appendChild(delBtn);
   delBtn.innerHTML = 'Delete';
+  delBtn.classList.add('delete-btn');
 
   // when delBtn is clicked, li will be deleted
     delBtn.addEventListener('click', function() {
       // when clicked, add class 'delete'?
-      li.classList.add('delete-btn');
+      li.classList.add('delete');
     });
 
 

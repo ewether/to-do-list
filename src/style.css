@@ -19,10 +19,7 @@ label {
 li {
   background-color: white;
   color: #383a3b;
-}
-
-form {
-  line-height: 3em;
+  height: 2em;
 }
 
 .title {
@@ -61,8 +58,12 @@ form {
   vertical-align: middle;
 }
 
-.delete-btn {
+.delete {
   display: none;
+}
+
+.delete-btn {
+  color: red;
 }
 
 .edit-btn {
