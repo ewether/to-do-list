@@ -35,11 +35,16 @@ submitBtn.addEventListener('click', function() {
   addLi();
 
 
+  li.addEventListener('click', function() {
+    li.classList.add('completed');
+  });
+
+
   // delete button
   const delBtn = document.createElement('button');
   li.appendChild(delBtn);
-  delBtn.innerHTML = 'Delete';
-  delBtn.classList.add('del-edit');
+  delBtn.innerHTML = 'X';
+  // delBtn.classList.add('del-edit');
   delBtn.setAttribute('id', 'delete-btn');
 
   // when delBtn is clicked, li will be deleted
@@ -50,21 +55,21 @@ submitBtn.addEventListener('click', function() {
 
 
   // edit button
-  const editBtn = document.createElement('button');
-  li.appendChild(editBtn);
-  editBtn.innerHTML = 'Edit';
-  editBtn.classList.add('del-edit');
-  editBtn.setAttribute('id', 'edit-btn')
+  // const editBtn = document.createElement('button');
+  // li.appendChild(editBtn);
+  // editBtn.innerHTML = 'Edit';
+  // editBtn.setAttribute('id', 'edit-btn');
+  // // editBtn.classList.add('del-edit');
 
-    // when editBtn is clicked, user can edit li text
-    editBtn.addEventListener('click', function() {
-      // makes content on li editable
-      li.contentEditable = 'true';
-      li.setAttribute('contenteditable', 'true');
-      // makes edit and delete buttons uneditable
-      editBtn.contentEditable = 'false';
-      delBtn.contentEditable = 'false';
-    });
+  //   // when editBtn is clicked, user can edit li text
+  //   editBtn.addEventListener('click', function() {
+  //     // makes content on li editable
+  //     li.contentEditable = 'true';
+  //     li.setAttribute('contenteditable', 'true');
+  //     // makes edit and delete buttons uneditable
+  //     editBtn.contentEditable = 'false';
+  //     delBtn.contentEditable = 'false';
+  //   });
 
 
 });

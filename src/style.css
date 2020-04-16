@@ -18,7 +18,7 @@ label {
 
 li {
   background-color: white;
-  color: #383a3b;
+  color: #141414;
   height: 2em;
   line-height: 2em;
 }
@@ -43,7 +43,7 @@ li {
 .user-input {
   width: 36em;
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   padding: 0;
   height: 2em;
   border-radius: 4px;
@@ -51,11 +51,13 @@ li {
 
 .user-li {
   font-size: 1em;
-  width: 27.1em;
+  width: 26.5em;
   margin: 0 auto;
   margin-top: 1em;
   display: flex;
   justify-content: flex-end;
+  border-radius: 2px;
+  padding-left: 1em;
 }
 
 .item-list {
@@ -68,25 +70,35 @@ li {
   font-size: 1.75em;
   padding: 0;
   vertical-align: middle;
+  font-size: 1.8em;
+  height: 1.115em;
+  color: white;
+  margin-left: -.1em;
 }
 
 .delete {
   display: none;
 }
 
-.del-edit {
-  cursor: auto;
-  color: #f5f5f5;
-  background-color: black;
-  /*height: 2.6em;*/
+.completed {
+  background-color: #c7f0ce;
 }
 
 #delete-btn {
   margin-left: auto;
+  background-color: #141414;
+  color: #f5f5f5;
+  font-size: 1.1em;
+  width: 1.8em;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
-
-
+/*#edit-btn {
+  border-radius: 2px;
+  z-index: 11;
+  cursor: pointer;
+}*/
 
 
 
