@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="./style.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-  <title>To Do List</title>
-</head>
-<body>
+  <head>
+    <link href="./style.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h1 class="title">To Do List</h1>
 
-  <h1 class="title">To Do List</h1>
-
-  <div class="instructions">
-    <p class="welcome">Welcome to your to do list!</p>
-    <p class="main-instructions">Enter text to add an item to your list. <br>
-    <p class="complete-instructions">Click an item to mark it as completed.
-    <p class="x-instructions">Click 'X' to delete an item.</p>
-  </div>
-<!--
+    <div class="instructions">
+      <p class="welcome">Welcome to your to do list!</p>
+      <p class="main-instructions">
+        Enter text to add an item to your list. <br />
+      </p>
+      <p class="complete-instructions">
+        Click an item to mark it as completed.
+      </p>
+      <p class="x-instructions">Click 'X' to delete an item.</p>
+    </div>
+    <!--
     <p class="welcome">Welcome to your to do list!</p>
     <p class="instructions">Enter text to add an item to your list. <br>
     Click an item to mark it as completed. <br>
     Click delete to delete an item. </p> -->
 
-  <form action="#">
-    <input type="text" class="user-input" id="userInput">
-    <button type="submit" value="Submit" class="submit-btn"><i class="fas fa-check-square"></i></button>
-  </form>
+    <form action="#">
+      <input type="text" class="user-input" id="userInput" />
+      <button type="submit" value="Submit" class="submit-btn">
+        <i class="fas fa-check-square"></i>
+      </button>
+    </form>
 
-  <ul class="item-list">
-  </ul>
+    <ul class="item-list"></ul>
 
-  <script type="text/javascript" src="main.js"></script>
-</body>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
