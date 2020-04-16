@@ -24,40 +24,66 @@ li {
 }
 
 .title {
-  font-size: 2em;
+  font-size: 2.4em;
   font-weight: 700;
   margin-bottom: 0;
 }
 
 .welcome {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 700;
   margin-top: .5em;
+  margin-bottom: 1.5em;
 }
 
-.instructions {
+/*.instructions {
   margin-top: 2em;
   font-size: .9em;
+}*/
+
+.instructions {
+  font-size: 1em;
+}
+
+.main-instructions {
+  margin: 0;
+}
+
+.complete-instructions {
+  margin: .5em 0em;
+  color: #98f090;
+}
+
+.x-instructions {
+  margin: 0;
+  color: #ff4545;
 }
 
 .user-input {
-  width: 36em;
-  margin-top: 2em;
+  width: 44em;
+  margin-top: 3em;
   margin-bottom: 2em;
   padding: 0;
-  height: 2em;
-  border-radius: 4px;
+  height: 2.75em;
+  border-radius: 2px;
+  border: none;
+  padding-left: 1em;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .user-li {
+  cursor: pointer;
   font-size: 1em;
-  width: 26.5em;
+  width: 28.5em;
   margin: 0 auto;
   margin-top: 1em;
   display: flex;
   justify-content: flex-end;
   border-radius: 2px;
   padding-left: 1em;
+  font-weight: 800;
+  transition: all 0.75s ease;
+  text-transform: capitalize;
 }
 
 .item-list {
@@ -70,10 +96,11 @@ li {
   font-size: 1.75em;
   padding: 0;
   vertical-align: middle;
-  font-size: 1.8em;
+  font-size: 2.1em;
   height: 1.115em;
   color: white;
   margin-left: -.1em;
+  margin-bottom: .08em;
 }
 
 .delete {
@@ -81,17 +108,17 @@ li {
 }
 
 .completed {
-  background-color: #c7f0ce;
+  background-color: #98f090;
 }
 
 #delete-btn {
   margin-left: auto;
-  background-color: #141414;
-  color: #f5f5f5;
-  font-size: 1.1em;
-  width: 1.8em;
+  /*background-color: white;*/
+  color: #141414;
+  font-size: 1.25em;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
+  font-weight: 700;
 }
 
 /*#edit-btn {

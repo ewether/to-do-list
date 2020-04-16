@@ -36,7 +36,7 @@ submitBtn.addEventListener('click', function() {
 
 
   li.addEventListener('click', function() {
-    li.classList.add('completed');
+    li.classList.toggle('completed');
   });
 
 
