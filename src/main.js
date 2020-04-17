@@ -50,6 +50,10 @@ submitBtn.addEventListener("click", function () {
     li.classList.add("delete");
   });
 
+  li.addEventListener("click", function () {
+    delBtn.classList.toggle("completed");
+  });
+
   // edit button
   // const editBtn = document.createElement('button');
   // li.appendChild(editBtn);
